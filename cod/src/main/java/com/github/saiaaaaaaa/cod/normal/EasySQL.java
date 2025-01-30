@@ -4,6 +4,8 @@ import android.content.Context;
 
 import com.github.saiaaaaaaa.cod._a;
 
+import java.util.List;
+
 public class EasySQL {
 
     _a _a;
@@ -34,5 +36,9 @@ public class EasySQL {
 
     public void deleteFromTable(String databaseName, String tableName, String columnValuePair){
         _a._a36(databaseName, tableName, columnValuePair);
+    }
+
+    public List<String> getTableValues(String databaseName, String tableName){
+        return _a._a43(databaseName, tableName);
     }
 }

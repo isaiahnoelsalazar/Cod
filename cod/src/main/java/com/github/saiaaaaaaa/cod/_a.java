@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class _a {
     Context _a0;
     public _a(Context _a1){
@@ -106,5 +109,28 @@ public class _a {
             _a40.close();
         } catch (Exception ignored){
         }
+    }
+    public List<String> _a43(String _a44, String _a45){
+        List<String> _a46 = new ArrayList<>();
+        try {
+            SQLiteDatabase _a47 = _a2(_a44);
+            if (_a16(_a44, _a45)){
+                Cursor _a48 = _a47.rawQuery("SELECT * FROM " + _a45, null);
+                while (_a48.moveToNext()){
+                    for (int _a49 = 0; _a49 < _a48.getColumnCount(); _a49++){
+                        int _a50 = _a48.getType(_a49);
+                        if (_a50 == Cursor.FIELD_TYPE_INTEGER || _a50 == Cursor.FIELD_TYPE_FLOAT){
+                            _a46.add(_a48.getColumnName(_a49) + ":" + _a48.getString(_a49));
+                        } else {
+                            _a46.add(_a48.getColumnName(_a49) + ":'" + _a48.getString(_a49) + "'");
+                        }
+                    }
+                }
+                _a48.close();
+            }
+            _a47.close();
+        } catch (Exception ignored){
+        }
+        return _a46;
     }
 }
