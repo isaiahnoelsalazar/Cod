@@ -69,3 +69,68 @@ Fullscreen.enable(this);
 ```
 Fullscreen.disable(this);
 ```
+## 3. Check
+- Check if a String contains any symbols
+```
+Check.hasSymbols("Sample text"); // returns false
+Check.hasSymbols("Sample text!"); // returns true
+```
+- Check if a String contains any numbers
+```
+Check.hasSymbols("Sample text"); // returns false
+Check.hasSymbols("Sample text1"); // returns true
+```
+- Check if a String contains any spaces
+```
+Check.hasSymbols("Sample_text"); // returns false
+Check.hasSymbols("Sample text"); // returns true
+```
+- Check how many seconds are left until specified date
+```
+Date now = new Date("02/10/2025");
+Date until = new Date("02/14/2025");
+
+Check.howManySecondsLeft(now, until); // returns 345600.0
+```
+- Check how many minutes are left until specified date
+```
+Date now = new Date("02/10/2025");
+Date until = new Date("02/14/2025");
+
+Check.howManyMinutesLeft(now, until); // returns 5760.0
+```
+- Check how many hours are left until specified date
+```
+Date now = new Date("02/10/2025");
+Date until = new Date("02/14/2025");
+
+Check.howManyHoursLeft(now, until); // returns 96.0
+```
+- Check how many days are left until specified date
+```
+Date now = new Date("02/10/2025");
+Date until = new Date("02/14/2025");
+
+Check.howManyDaysLeft(now, until); // returns 4.0
+```
+## 4. Convert
+- Convert a String to Base64
+```
+Convert.toBase64("Sample text"); // returns "U2FtcGxlIHRleHQ="
+```
+- Convert a Base64 String to normal String
+```
+Convert.fromBase64("U2FtcGxlIHRleHQ="); // returns "Sample text"
+```
+- Convert a date to MM/DD/YY
+```
+Convert.dateToMMDDYY(new Date());
+```
+- Convert a date to DD/MM/YY
+```
+Convert.dateToDDMMYY(new Date());
+```
+- Convert a date to YY/MM/DD
+```
+Convert.dateToYYMMDD(new Date());
+```
