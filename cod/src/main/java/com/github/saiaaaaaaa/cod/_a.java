@@ -98,6 +98,7 @@ public class _a {
             SQLiteDatabase _a40 = _a2(_a37);
             if (_a16(_a37, _a38)){
                 Cursor _a41 = _a40.rawQuery("SELECT " + _a39.split(":")[0] + " FROM " + _a38, null);
+                _a41.moveToNext();
                 int _a42 = _a41.getType(0);
                 _a41.close();
                 if (_a42 == Cursor.FIELD_TYPE_INTEGER || _a42 == Cursor.FIELD_TYPE_FLOAT){
