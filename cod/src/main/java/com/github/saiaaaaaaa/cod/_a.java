@@ -85,7 +85,7 @@ public class _a {
             if (_a16(_a30, _a31)){
                 ContentValues _a34 = new ContentValues();
                 for (String _a35 : _a32){
-                    _a34.put(_a35.split(":")[0], _a35.split(":")[1]);
+                    _a34.put(_a35.split(":")[0], _a35.substring(_a35.split(":")[0].length() + 1));
                 }
                 _a33.insert(_a31, null, _a34);
             }
