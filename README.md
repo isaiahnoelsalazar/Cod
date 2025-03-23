@@ -15,8 +15,8 @@ implementation 'com.github.saiaaaaaaa:Cod:(version)'
 ```
 - Import the dependency
 ```
-import com.github.saiaaaaaaa.cod.normal.EasySQL;
-import com.github.saiaaaaaaa.cod.normal.Fullscreen;
+import com.github.saiaaaaaaa.cod.EasySQL;
+import com.github.saiaaaaaaa.cod.Fullscreen;
 ```
 # How to use Cod
 ## 1. EasySQL

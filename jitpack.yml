@@ -4,4 +4,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=cod-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.saiaaaaaaa -DartifactId=Cod -Dversion=1.0.4 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.saiaaaaaaa -DartifactId=Cod -Dversion=1.0.5 -Dpackaging=aar -DgeneratePom=true
