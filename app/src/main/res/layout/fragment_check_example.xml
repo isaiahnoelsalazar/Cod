@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CheckExampleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasSymbols(&quot;Sample text&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_symbol1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasSymbols(&quot;Sample text!&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_symbol2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasNumbers(&quot;Sample text&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasNumbers(&quot;Sample text1&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_number2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasSpaces(&quot;Sample_text&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_space1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.hasSpaces(&quot;Sample text&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_space2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date now = new Date(&quot;02/10/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date until = new Date(&quot;02/14/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.howManySecondsLeft(now, until);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_seconds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date now = new Date(&quot;02/10/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date until = new Date(&quot;02/14/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.howManyMinutesLeft(now, until);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date now = new Date(&quot;02/10/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date until = new Date(&quot;02/14/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.howManyHoursLeft(now, until);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date now = new Date(&quot;02/10/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date until = new Date(&quot;02/14/2025&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check.howManyDaysLeft(now, until);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/check_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

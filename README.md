@@ -13,8 +13,10 @@ dependencyResolutionManagement {
 ```
 implementation 'com.github.saiaaaaaaa:Cod:(version)'
 ```
-- Import the dependency
+- Import the dependency based on your needs
 ```
+import com.github.saiaaaaaaa.cod.Check;
+import com.github.saiaaaaaaa.cod.Convert;
 import com.github.saiaaaaaaa.cod.EasySQL;
 import com.github.saiaaaaaaa.cod.Fullscreen;
 ```
@@ -77,13 +79,13 @@ Check.hasSymbols("Sample text!"); // returns true
 ```
 - Check if a String contains any numbers
 ```
-Check.hasSymbols("Sample text"); // returns false
-Check.hasSymbols("Sample text1"); // returns true
+Check.hasNumbers("Sample text"); // returns false
+Check.hasNumbers("Sample text1"); // returns true
 ```
 - Check if a String contains any spaces
 ```
-Check.hasSymbols("Sample_text"); // returns false
-Check.hasSymbols("Sample text"); // returns true
+Check.hasSpaces("Sample_text"); // returns false
+Check.hasSpaces("Sample text"); // returns true
 ```
 - Check how many seconds are left until specified date
 ```

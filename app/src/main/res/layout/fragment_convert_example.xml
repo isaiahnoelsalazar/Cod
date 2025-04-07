@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ConvertExampleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.toBase64(&quot;Sample text&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_tob64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.fromBase64(&quot;U2FtcGxlIHRleHQ=&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_fromb64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.dateToMMDDYY(new Date());"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_tomdy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.dateToDDMMYY(new Date());"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_todmy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.dateToYYMMDD(new Date());"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_toymd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

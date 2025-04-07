@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option_easysql"
+        android:title="EasySQL example"/>
+    <item android:id="@+id/option_fullscreen"
+        android:title="Fullscreen example"/>
+    <item android:id="@+id/option_check"
+        android:title="Check example"/>
+    <item android:id="@+id/option_convert"
+        android:title="Convert example"/>
+</menu>
