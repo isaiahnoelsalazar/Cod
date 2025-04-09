@@ -210,6 +210,13 @@
                 android:text="result"
                 android:textColor="@color/black"/>
 
+            <EditText
+                android:id="@+id/check_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type here to check email"
+                android:textColor="@color/black"/>
+
         </LinearLayout>
 
     </ScrollView>

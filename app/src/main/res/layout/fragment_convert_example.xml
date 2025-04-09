@@ -84,6 +84,20 @@
                 android:text="result"
                 android:textColor="@color/black"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert.toRealName(&quot;isaiah&quot;);"
+                android:textColor="@color/black"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/convert_torn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="result"
+                android:textColor="@color/black"/>
+
         </LinearLayout>
 
     </ScrollView>

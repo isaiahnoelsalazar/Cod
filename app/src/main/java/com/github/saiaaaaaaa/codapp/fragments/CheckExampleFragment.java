@@ -6,9 +6,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.github.saiaaaaaaa.cod.Check;
@@ -43,6 +45,7 @@ public class CheckExampleFragment extends Fragment {
         TextView check_minutes = view.findViewById(R.id.check_minutes);
         TextView check_hours = view.findViewById(R.id.check_hours);
         TextView check_days = view.findViewById(R.id.check_days);
+        EditText check_email = view.findViewById(R.id.check_email);
 
         check_symbol1.setText(String.valueOf(Check.hasSymbols("Sample text")));
         check_symbol2.setText(String.valueOf(Check.hasSymbols("Sample text!")));
@@ -54,5 +57,18 @@ public class CheckExampleFragment extends Fragment {
         check_minutes.setText(String.valueOf(Check.howManyMinutesLeft(new Date("02/10/2025"), new Date("02/14/2025"))));
         check_hours.setText(String.valueOf(Check.howManyHoursLeft(new Date("02/10/2025"), new Date("02/14/2025"))));
         check_days.setText(String.valueOf(Check.howManyDaysLeft(new Date("02/10/2025"), new Date("02/14/2025"))));
+        Check.Email.addValidDomainName("gmail");
+        Check.Email.addValidDomainName("outlook");
+        Check.Email.addValidDomainName("yahoo");
+        Check.Email.addValidDomainExtensions("com");
+        check_email.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (!Check.Email.isValid(check_email.getText().toString())){
+                    check_email.setError("Not a valid email");
+                }
+                return false;
+            }
+        });
     }
 }

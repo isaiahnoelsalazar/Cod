@@ -6,6 +6,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Date;
 
 public class Convert {
+    public static String toRealName(String str){
+        return String.valueOf(str.charAt(0)).toUpperCase() + str.substring(1);
+    }
+
     public static String toBase64(String str){
         return new String(Base64.encode(str.getBytes(StandardCharsets.UTF_8), Base64.DEFAULT));
     }

@@ -38,11 +38,13 @@ public class ConvertExampleFragment extends Fragment {
         TextView convert_tomdy = view.findViewById(R.id.convert_tomdy);
         TextView convert_todmy = view.findViewById(R.id.convert_todmy);
         TextView convert_toymd = view.findViewById(R.id.convert_toymd);
+        TextView convert_torn = view.findViewById(R.id.convert_torn);
 
         convert_tob64.setText(Convert.toBase64("Sample text"));
         convert_fromb64.setText(Convert.fromBase64("U2FtcGxlIHRleHQ="));
         convert_tomdy.setText(Convert.dateToMMDDYY(new Date()));
         convert_todmy.setText(Convert.dateToDDMMYY(new Date()));
         convert_toymd.setText(Convert.dateToYYMMDD(new Date()));
+        convert_torn.setText(Convert.toRealName("isaiah"));
     }
 }

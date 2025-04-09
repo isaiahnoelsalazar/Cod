@@ -87,6 +87,16 @@ Check.hasNumbers("Sample text1"); // returns true
 Check.hasSpaces("Sample_text"); // returns false
 Check.hasSpaces("Sample text"); // returns true
 ```
+- Check if a String is a valid email
+```
+Check.Email.addValidDomainName("gmail");
+Check.Email.addValidDomainName("outlook");
+Check.Email.addValidDomainName("yahoo");
+
+Check.Email.addValidDomainExtensions("com");
+
+Check.Email.isValid("isaiahnoelsalazar474@gmail.com") // returns true
+```
 - Check how many seconds are left until specified date
 ```
 Date now = new Date("02/10/2025");

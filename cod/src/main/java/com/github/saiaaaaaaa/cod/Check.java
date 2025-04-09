@@ -1,8 +1,36 @@
 package com.github.saiaaaaaaa.cod;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Check {
+
+    public static class Email {
+
+        static List<String> validDomainNames = new ArrayList<>();
+        static List<String> validDomainExtensions = new ArrayList<>();
+
+        public static void addValidDomainName(String str){
+            validDomainNames.add(str);
+        }
+
+        public static void addValidDomainExtensions(String str){
+            validDomainExtensions.add(str);
+        }
+
+        public static boolean isValid(String str){
+            try {
+                String[] domain = str.split("@");
+                String domainName = domain[1].split("\\.")[0];
+                String domainExtension = domain[1].split("\\.")[1];
+                return validDomainNames.contains(domainName) && validDomainExtensions.contains(domainExtension);
+            } catch (Exception exception){
+                return false;
+            }
+        }
+    }
+
     public static boolean hasSymbols(String str){
         String symbols = "~`!@#$%^&*()_+-=[]{}\\|'\";:,.<>/?";
         for (int a = 0; a < str.length(); a++){
